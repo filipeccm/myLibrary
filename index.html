@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+  <link href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" rel="stylesheet" type="text/css">
+  <title>Library App</title>
+</head>
+<body>
+    <div class="form">
+      <form id="popup" action="" name="book-form">
+        <h2>Enter new book information:</h2>
+        <label for="title">
+            <strong>Title:</strong>
+        </label>
+        <input type="text" name="title" required>
+        <label for="author">
+            <strong>Author:</strong>
+        </label>
+        <input type="text" name="author" required>
+        <label for="pages">
+            <strong>Number of Pages:</strong>
+        </label>
+        <input type="text" name="pages" id="pages">
+        <div id="popup-radio">
+          <label for="read-status">
+            <strong>What is its status?</strong>
+          </label>
+          <label for="read">
+              <input value="read" type="radio" name="readstatus">Read
+          </label>
+          <label for="unread">
+              <input value="unread" type="radio" name="readstatus">Unread
+          </label>
+        </div>
+        <div id="popup-btn">
+          <button type="button" class="send-btn" onclick=addBookToLibrary()>Submit</button>
+          <button type="button" class="cancel-btn" onclick=closeForm()>Cancel</button>
+        </div>
+      </form>
+    </div>
+    <div id="app-container">
+    <h1>My Library</h1>
+    <div id="container">
+      <button id="add-button" onclick=openForm()>Add New Book</button>
+    </div>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-database.js"></script>
+  <script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAZVp55ThvhEYfF3ZiPpY0nC7_bB29KLxk",
+    authDomain: "mylibrary-7e8a4.firebaseapp.com",
+    databaseURL: "https://mylibrary-7e8a4.firebaseio.com",
+    projectId: "mylibrary-7e8a4",
+    storageBucket: "mylibrary-7e8a4.appspot.com",
+    messagingSenderId: "1078431646571",
+    appId: "1:1078431646571:web:7df921af4f71677845822e"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+  <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
