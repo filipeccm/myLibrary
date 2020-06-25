@@ -27,7 +27,7 @@ h1 {
   height: 230px;
   padding: 0.8rem;
   color: white;
-  box-shadow: 0px 0px 21px -2px rgba(0,0,0,0.3);
+  box-shadow: 0px 0px 21px -2px rgba(0, 0, 0, 0.3);
 }
 .card p {
   margin-bottom: 0.5rem;
@@ -44,7 +44,7 @@ h1 {
 }
 .pages {
   font-weight: 400;
-  font-size: 0.7rem
+  font-size: 0.7rem;
 }
 .btn-container {
   display: flex;
@@ -72,13 +72,12 @@ h1 {
   border-radius: 50px;
   height: 25px;
   width: 100px;
-  background-color: #D1593D;
+  background-color: #d1593d;
   border: none;
   color: #171829;
-  
 }
 .btn-del:before {
-  content: "\f1f8";
+  content: '\f1f8';
 }
 .done {
   background-color: rgb(99, 209, 125);
@@ -88,7 +87,7 @@ h1 {
 }
 #container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 180px) );
+  grid-template-columns: repeat(auto-fill, minmax(160px, 180px));
   gap: 15px;
   max-width: 900px;
   justify-content: center;
@@ -111,7 +110,7 @@ h1 {
   text-align: center;
   margin-bottom: 1.2rem;
 }
-#popup input[type=text] {
+#popup input[type='text'] {
   border-radius: 10px;
   box-shadow: none;
   border: none;
@@ -140,7 +139,8 @@ h1 {
   color: #171829;
   display: flex;
   justify-content: center;
-  background-color: #F29E40;
+  align-items: center;
+  background-color: #f29e40;
   border-radius: 5px;
   height: 230px;
   border: none;
@@ -168,7 +168,7 @@ h1 {
   background-color: rgb(58, 247, 102);
 }
 .cancel-btn {
-  background-color: #D1593D; 
+  background-color: #d1593d;
   font-size: 14px;
 }
 .cancel-btn:hover {

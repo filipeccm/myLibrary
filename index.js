@@ -1,3 +1,18 @@
+require('dotenv').config();
+
+// Your web app's Firebase configuration
+var firebaseConfig = {
+  apiKey: process.env.API_KEY,
+  authDomain: 'mylibrary-7e8a4.firebaseapp.com',
+  databaseURL: 'https://mylibrary-7e8a4.firebaseio.com',
+  projectId: 'mylibrary-7e8a4',
+  storageBucket: 'mylibrary-7e8a4.appspot.com',
+  messagingSenderId: '1078431646571',
+  appId: '1:1078431646571:web:7df921af4f71677845822e',
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+
 const dbLibraryRef = firebase.database().ref('library');
 let myLibrary = [];
 
