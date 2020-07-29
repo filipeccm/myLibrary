@@ -38,10 +38,10 @@
           </label>
         </div>
         <div id="popup-btn">
-          <button type="submit" class="send-btn" onclick="addBookToLibrary()">
+          <button type="button" class="send-btn" id="send-button">
             Submit
           </button>
-          <button type="button" class="cancel-btn" onclick="closeForm()">
+          <button type="button" class="cancel-btn" id="cancel-button">
             Cancel
           </button>
         </div>
@@ -50,7 +50,7 @@
     <div id="app-container">
       <h1>My Library</h1>
       <div id="container">
-        <button id="add-button" onclick="openForm()">Add New Book</button>
+        <button id="add-button">Add New Book</button>
       </div>
     </div>
     <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>

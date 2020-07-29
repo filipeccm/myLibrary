@@ -117,7 +117,14 @@ function changeRead(event) {
 }
 function openForm() {
   document.getElementsByClassName('form')[0].style.display = 'flex';
+  console.log('hi');
 }
 function closeForm() {
   document.getElementsByClassName('form')[0].style.display = 'none';
 }
+
+document.getElementById('add-button').addEventListener('click', openForm);
+document
+  .getElementById('send-button')
+  .addEventListener('click', addBookToLibrary);
+document.getElementById('cancel-button').addEventListener('click', closeForm);
